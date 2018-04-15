@@ -1,0 +1,72 @@
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>-->
+
+
+<div class="hero">
+
+    <div class="title">
+    <h1><span>UARise</span><br>Café</h1>
+
+
+    <!--<div class="mouse">
+        <span></span>
+    </div>-->
+</div>
+</div>
+
+ <div class="auth" *ngIf="auth.user | async; then authenticated else guest"></div>
+
+<ng-template #authenticated>
+    <button (click)="auth.logout()" class="loginout">Logout</button>
+</ng-template>
+  
+<ng-template #guest>
+    <button (click)="auth.loginWithGoogle()" class="loginout">Login with google</button>
+</ng-template>
+
+
+
+<!--<ng-container *ngIf="auth.user | async; then authent else guest"></ng-container>
+
+<ng-template #authent>
+    <div>Auth</div>
+</ng-template>
+<ng-template #guest>
+    <div>Guest</div>
+</ng-template>-->
+
+<div class="row-content">
+    <h1 class="sec01">About:</h1>
+    <p>UARise is a place where growth is measured by the opportunity to succeed in a hands-on classroom environment.  The objective of the UARise program is to cultivate a positive experience, inspiring a passion for learning in a realistic work setting.<br><br>
+
+    During the 2008-9 school year, UAHS Career Based Intervention and UAConnect students worked together to  build a place that would offer students the opportunity to thrive, to connect to their peers, their school, their community.  A  place where students could foster a love for learning without sitting at a desk, taking a written test ~ where they could learn and utilize real life skills in an environment that was safe and educational.  After months of hard work, planning, grant writing, fundraising, and partnering with UASchools and Crimson Cup Coffee,  UARise was born.<br><br>
+
+    Ten years later, UARise remains a full fledge, student run coffee shop.  UARise is a one-stop shop for our UAHS Community.  Hot, iced, and frozen beverages are available before school and during lunch periods.  Staff members are also offered an opportunity to get their beverages delivered to their classroom twice a day.  UARise is self-funding and the funds that do not go back into the running of the coffee shop are returned to the school community in the form of scholarships and donations to other programs.<br><br>
+</p>
+    <h1 class="sec02">Hours:</h1>
+    <p class="sec02">
+        Monday  7:30 - 8:00, 4th and 5th <br>
+        Tuesday 7:30 - 8:00, 4th and 5th<br>
+        Wednesday 7:45 - 8:30, 4th and 5th<br>
+        Thursday 7:45 - 8:00, 4th and 5th<br>
+        Friday 7:30 - 8:00, 4th and 5th
+</p>
+<br>
+<br>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

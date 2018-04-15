@@ -1,0 +1,32 @@
+.big {
+	margin-bottom: 80px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+	}
+.cancel:hover {
+	background-color: #87110a;
+	color: white;
+}
+.order:hover {
+	background-color: #87110a;
+	color: white;
+}
+.buttons {
+	text-align: center;
+	margin: auto;
+}
+.cancel {
+	background-color: #fff;
+}
+.order {
+	background-color: #fff;
+}
+
+

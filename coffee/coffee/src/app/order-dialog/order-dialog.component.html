@@ -1,0 +1,51 @@
+<!--<mat-card>
+	<mat-card-header>
+		<mat-card-title><h1>Dialog Demo</h1></mat-card-title>
+	</mat-card-header>
+<hr>
+<mat-card-content>
+	<button mat-raised-button (click)="openDialog()">Open Dialog</button>
+	<hr>
+	<strong>Result: {{dialogResult}}</strong>
+</mat-card-content>
+</mat-card>-->
+
+<div class="page">
+<ul class="unlist">
+    <li *ngFor="let item of items | async" class="lilist">
+	<!--	<div class="holder"> -->
+			<button class="grid" mat-button (click)="openDialog()" >
+		    	<img [src]="item.PhotoSrc" width="200px"/>
+		    	<ng-container *ngIf="item.Title">
+			    	<h2>
+			       		{{ item.Title }}
+			    	</h2>
+		    	</ng-container>
+		    	<h3>
+				    <ng-container *ngIf="item.Small">
+				    	<b>Small</b> <small>{{ item.Small }}&nbsp;</small>
+				    </ng-container>
+				    <ng-container *ngIf="item.Regular">
+				    	<b>Regular</b> <small>{{ item.Regular }}</small>
+				    </ng-container>
+				</h3>
+			</button>
+		    <br>
+		<!--</div>-->
+    </li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
